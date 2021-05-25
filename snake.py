@@ -10,7 +10,7 @@ class Field:
             0: ' . ',
             1: ' * ',
             2: ' # ',
-            3: ' & ',
+            3: ' $ ',
         }
         self.snake_coords = []
         self._generate_field()
@@ -171,7 +171,7 @@ def main(screen):
     screen.timeout(0)
 
     # Init snake & field
-    field = Field(10)
+    field = Field(21)
     snake = Snake("Joe")
     snake.set_field(field)
 
